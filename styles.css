@@ -3,23 +3,39 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #eaeaea; /* Fondo gris claro */
+    background-color: #121212; /* Fondo inicial oscuro */
+    color: #ffffff; /* Texto blanco */
+    animation: colorCycle 10s infinite alternate; /* Animación de cambio de color */
+}
+
+/* Definición de la animación para el fondo del body */
+@keyframes colorCycle {
+    0% { background-color: #121212; }    /* Negro */
+    20% { background-color: #ff4d4d; }   /* Rojo */
+    40% { background-color: #4d4dff; }   /* Azul */
+    60% { background-color: #4dff4d; }   /* Verde */
+    80% { background-color: #ff4dff; }   /* Rosa */
+    100% { background-color: #ffdb4d; }  /* Amarillo */
 }
 
 /* Estilo de la cuadrícula para las mesas */
 .contenedor-mesas {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 columnas para mostrar 10 mesas en 2 filas */
-    grid-template-rows: repeat(2, 1fr); /* 2 filas para acomodar las 10 mesas */
-    height: 100vh; /* Altura completa de la ventana */
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 100vh;
     gap: 10px;
-    box-sizing: border-box; /* Incluye padding en el tamaño total */
+    box-sizing: border-box;
 }
 
 /* Estilo de cada mesa */
 .mesa {
-    background-color: #f4f4f9;
-    border: 2px solid #e3e3e3;
+  /* background-image: url("./img/image-fondo.jpeg"); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+    border: 2px solid #333333;
+    color: #ffffff;
     text-align: center;
     border-radius: 10px;
     transition: transform 0.3s ease;
@@ -27,80 +43,80 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
-
-/* Efecto al pasar el mouse sobre la mesa */
+.mesa:nth-child(1){
+    background-image: url("./img/image-fondo-2.jpeg");
+}
 
 /* Estilo de la mesa destacada */
 .mesa-destacada {
-    background-color: #f7b731;
-    color: #fff;
-    border: 2px solid #d4ac0e; /* Borde dorado */
+    background-color: #f39c12;
+    color: #000000;
+    border: 2px solid #e67e22;
 }
 
 /* Estilo del título de la mesa */
 h1 {
-    margin: 0; /* Elimina márgenes superior e inferior */
-    padding: 5px 0; /* Espaciado vertical ajustado */
-    font-size: 1.5em; /* Ajusta el tamaño del texto si es necesario */
+    margin: 0;
+    padding: 5px 0;
+    font-size: 1.5em;
 }
 
 /* Estilo del total */
 .total {
-    font-size: 2em; /* Tamaño más grande para el total */
-    font-weight: bold; /* Negrita */
-    margin: 5px 0; /* Espacio superior e inferior reducido */
+    font-size: 2em;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #ffffff;
 }
 
 .buttons-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* Centra los botones horizontalmente */
+    align-items: center;
 }
 
 /* Botones */
 .boton-agregar, .boton-limpiar {
-    font-size: 0.9em; /* Tamaño de fuente más pequeño */
-    padding: 8px 12px; /* Espaciado interior para que sean más compactos */
+    font-size: 0.9em;
+    padding: 8px 12px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-    width: auto; /* Ajusta el ancho al contenido */
+    width: auto;
     max-width: fit-content;
     align-self: center;
-   
 }
 
 /* Estilo de botón agregar */
 .boton-agregar {
-    background-color: #007bff; /* Color azul */
-    color: #fff;
+    background-color: #4a90e2;
+    color: #ffffff;
     border: none;
-   
 }
 
 .boton-agregar:hover {
-    background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+    background-color: #357ab8;
 }
 
 /* Estilo de botón limpiar */
 .boton-limpiar {
-    background-color: #6c757d; /* Color gris */
-    color: #fff;
+    background-color: #555555;
+    color: #ffffff;
     border: none;
-    margin-top: 10px; /* Espacio superior para separar de botón agregar */
+    margin-top: 10px;
 }
 
 .boton-limpiar:hover {
-    background-color: #5a6268; /* Gris más oscuro al pasar el mouse */
+    background-color: #444444;
 }
 
 /* Estilo del select */
 select {
+    background-color: #1f1f1f;
+    color: #ffffff;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #444;
     margin-bottom: 10px;
     font-size: 16px;
 }
-
-/* Estilo del título */
