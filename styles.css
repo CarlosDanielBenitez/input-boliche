@@ -43,50 +43,25 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
-.mesa:nth-child(1){
-    background-image: url("./img/image-fondo-2.jpeg");
+
+#image-container {
+    display: flex;               /* Usamos flexbox para centrar la imagen */
+    justify-content: center;     /* Centra la imagen horizontalmente */
+    align-items: center;         /* Centra la imagen verticalmente */
+    width: 100%;                 /* Ocupa todo el ancho del contenedor padre */
+    height: 250px;               /* Ajusta la altura según tus necesidades */
+    overflow: hidden;            /* Oculta cualquier parte de la imagen que se salga del contenedor */
+    position: relative;          /* Posicionamiento relativo para el contenido interno */
+    background-color: #f0f0f0;  /* Fondo opcional para visualizar mejor el área */
+    border-radius: 10px;
 }
 
-.mesa:nth-child(2){
-    background-image: url("./img/image-fondo-3.jpeg");
-}
-
-.mesa:nth-child(3){
-    background-image: url("./img/image-fondo-4.jpeg");
-}
-
-.mesa:nth-child(4){
-    background-image: url("./img/image-fondo-5.jpeg");
-}
-
-.mesa:nth-child(5){
-    background-image: url("./img/image-fondo-6.jpeg");
-}
-
-.mesa:nth-child(6){
-    background-image: url("./img/image-fondo-7.jpeg");
-}
-
-.mesa:nth-child(7){
-    background-image: url("./img/image-fondo-8.jpeg");
-}
-
-
-.mesa:nth-child(8){
-    background-image: url("./img/image-fondo-2.jpeg");
-}
-
-.mesa:nth-child(9){
-    background-image: url("./img/image-fondo-1.jpeg");
-}
-
-.mesa:nth-child(9){
-    background-image: url("./img/image-fondo-6.jpeg");
-}
-
-
-.mesa:nth-child(10){
-    background-image: url("./img/image-fondo-6.jpeg");
+#current-image {
+    
+    width: 100%;                 /* La imagen ocupará todo el ancho del contenedor */
+    height: 250px;                /* La imagen ocupará todo el alto del contenedor */
+    object-fit: cover;           /* Mantiene la proporción de la imagen y la cubre completamente */
+    transition: opacity 0.5s ease-in-out; /* Transición suave al cambiar */
 }
 
 
