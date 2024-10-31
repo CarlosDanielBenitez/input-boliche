@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boliche Input - Mesas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor-mesas">
+        <div class="mesa">
+            <h2>Mesa 1</h2>
+            <p class="total">Total: $<span id="total1">0</span></p>
+            <select id="bebida1">
+                <option value="500">Cerveza - $500</option>
+                <option value="1000">Vino - $1000</option>
+                <option value="1500">Whisky - $1500</option>
+            </select>
+            
+            <button class="boton-agregar" onclick="agregarBebida('total1', 'bebida1')">Añadir bebida</button>
+            <button class="boton-limpiar" onclick="limpiarMesa('total1')">Limpiar mesa</button>
+        </div>
+        <div class="mesa">
+            <h2>Mesa 2</h2>
+            <p class="total">Total: $<span id="total2">0</span></p>
+            <select id="bebida2">
+                <option value="500">Cerveza - $500</option>
+                <option value="1000">Vino - $1000</option>
+                <option value="1500">Whisky - $1500</option>
+            </select>
+            <button class="boton-agregar" onclick="agregarBebida('total2', 'bebida2')">Añadir bebida</button>
+            <button class="boton-limpiar" onclick="limpiarMesa('total2')">Limpiar mesa</button>
+        </div>
+        <!-- Mesas 3 a 10 -->
+        <div class="mesa">
+            <h2>Mesa 3</h2>
+            <p  class="total">Total: $<span id="total3">0</span></p>
+            <select id="bebida3">
+                <option value="500">Cerveza - $500</option>
+                <option value="1000">Vino - $1000</option>
+                <option value="1500">Whisky - $1500</option>
+            </select>
+            <button class="boton-agregar" onclick="agregarBebida('total3', 'bebida3')">Añadir bebida</button>
+            <button class="boton-limpiar" onclick="limpiarMesa('total3')">Limpiar mesa</button>
+        </div>
+        <div class="mesa">
+            <h2>Mesa 4</h2>
+            <p class="total">Total: $<span id="total4">0</span></p>
+            <select id="bebida4">
+                <option value="500">Cerveza - $500</option>
+                <option value="1000">Vino - $1000</option>
+                <option value="1500">Whisky - $1500</option>
+            </select>
+            <button class="boton-agregar" onclick="agregarBebida('total4', 'bebida4')">Añadir bebida</button>
+            <button class="boton-limpiar" onclick="limpiarMesa('total4')">Limpiar mesa</button>
+        </div>
+        <div class="mesa">
+            <h2>Mesa 5</h2>
+            <p class="total">Total: $<span id="total5">0</span></p>
+            <select id="bebida5">
+                <option value="500">Cerveza - $500</option>
+                <option value="1000">Vino - $1000</option>
+                <option value="1500">Whisky - $1500</option>
+            </select>
+            <button class="boton-agregar" onclick="agregarBebida('total5', 'bebida5')">Añadir bebida</button>
+            <button class="boton-limpiar" onclick="limpiarMesa('total5')">Limpiar mesa</button>
+        </div>
+        <div class="mesa">
+            <h2>Mesa 6</h2>
+            <p class="total">Total: $<span id="total6">0</span></p>
+            <select id="bebida6">
+                <option value="500">Cerveza - $500</option>
+                <option value="1000">Vino - $1000</option>
+                <option value="1500">Whisky - $1500</option>
+            </select>
+            <button class="boton-agregar" onclick="agregarBebida('total6', 'bebida6')">Añadir bebida</button>
+            <button class="boton-limpiar" onclick="limpiarMesa('total6')">Limpiar mesa</button>
+        </div>
+        <div class="mesa">
+            <h2>Mesa 7</h2>
+            <p class="total">Total: $<span id="total7">0</span></p>
+            <select id="bebida7">
+                <option value="500">Cerveza - $500</option>
+                <option value="1000">Vino - $1000</option>
+                <option value="1500">Whisky - $1500</option>
+            </select>
+            <button class="boton-agregar" onclick="agregarBebida('total7', 'bebida7')">Añadir bebida</button>
+            <button class="boton-limpiar" onclick="limpiarMesa('total7')">Limpiar mesa</button>
+        </div>
+        <div class="mesa">
+            <h2>Mesa 8</h2>
+            <p class="total">Total: $<span id="total8">0</span></p>
+            <select id="bebida8">
+                <option value="500">Cerveza - $500</option>
+                <option value="1000">Vino - $1000</option>
+                <option value="1500">Whisky - $1500</option>
+            </select>
+            <button class="boton-agregar" onclick="agregarBebida('total8', 'bebida8')">Añadir bebida</button>
+            <button class="boton-limpiar" onclick="limpiarMesa('total8')">Limpiar mesa</button>
+        </div>
+        <div class="mesa">
+            <h2>Mesa 9</h2>
+            <p class="total">Total: $<span id="total9">0</span></p>
+            <select id="bebida9">
+                <option value="500">Cerveza - $500</option>
+                <option value="1000">Vino - $1000</option>
+                <option value="1500">Whisky - $1500</option>
+            </select>
+            <button class="boton-agregar" onclick="agregarBebida('total9', 'bebida9')">Añadir bebida</button>
+            <button class="boton-limpiar" onclick="limpiarMesa('total9')">Limpiar mesa</button>
+        </div>
+        <div class="mesa">
+            <h2>Mesa 10</h2>
+            <p class="total">Total: $<span id="total10">0</span></p>
+            <select id="bebida10">
+                <option value="500">Cerveza - $500</option>
+                <option value="1000">Vino - $1000</option>
+                <option value="1500">Whisky - $1500</option>
+            </select>
+            <button class="boton-agregar" onclick="agregarBebida('total10', 'bebida10')">Añadir bebida</button>
+            <button class="boton-limpiar" onclick="limpiarMesa('total10')">Limpiar mesa</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
