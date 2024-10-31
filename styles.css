@@ -30,7 +30,7 @@ body {
 
 /* Estilo de cada mesa */
 .mesa {
-  /* background-image: url("./img/image-fondo.jpeg"); */
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -46,6 +46,49 @@ body {
 .mesa:nth-child(1){
     background-image: url("./img/image-fondo-2.jpeg");
 }
+
+.mesa:nth-child(2){
+    background-image: url("./img/image-fondo-3.jpeg");
+}
+
+.mesa:nth-child(3){
+    background-image: url("./img/image-fondo-4.jpeg");
+}
+
+.mesa:nth-child(4){
+    background-image: url("./img/image-fondo-5.jpeg");
+}
+
+.mesa:nth-child(5){
+    background-image: url("./img/image-fondo-6.jpeg");
+}
+
+.mesa:nth-child(6){
+    background-image: url("./img/image-fondo-7.jpeg");
+}
+
+.mesa:nth-child(7){
+    background-image: url("./img/image-fondo-8.jpeg");
+}
+
+
+.mesa:nth-child(8){
+    background-image: url("./img/image-fondo-2.jpeg");
+}
+
+.mesa:nth-child(9){
+    background-image: url("./img/image-fondo-1.jpeg");
+}
+
+.mesa:nth-child(9){
+    background-image: url("./img/image-fondo-6.jpeg");
+}
+
+
+.mesa:nth-child(10){
+    background-image: url("./img/image-fondo-6.jpeg");
+}
+
 
 /* Estilo de la mesa destacada */
 .mesa-destacada {
