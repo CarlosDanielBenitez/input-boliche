@@ -27,7 +27,7 @@ function verificarUmbral(mesaId, total) {
     let mesa = document.getElementById(mesaId).closest('.mesa');
 
     // Umbral especial
-    const umbralEspecial = 2000;
+    const umbralEspecial = 100000;
 
     // Si el total supera el umbral, aplicar estilo especial
     if (total >= umbralEspecial) {
@@ -67,28 +67,3 @@ function cargarTotales() {
         }
     });
 }
-
-const images = [
-    './img/image-fondo-3.jpeg',
-    './img/image-fondo-4.jpeg',
-    './img/image-fondo-5.jpeg'
-   
-];
-
-let currentIndex = 0;
-const imageElement = document.getElementById('current-image');
-
-function changeImage() {
-    // Cambia la opacidad para crear un efecto de desvanecimiento
-    imageElement.style.opacity = 0;
-
-    // Espera que termine la transición antes de cambiar la imagen
-    setTimeout(() => {
-        currentIndex = (currentIndex + 1) % images.length; // Cicla a la siguiente imagen
-        imageElement.src = images[currentIndex];
-        imageElement.style.opacity = 1; // Vuelve a mostrar la imagen
-    }, 500); // Debe coincidir con la duración de la transición en CSS
-}
-
-// Cambia la imagen cada 5 segundos
-setInterval(changeImage, 5000);
