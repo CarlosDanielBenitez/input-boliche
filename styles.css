@@ -3,45 +3,52 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #121212; /* Fondo inicial oscuro */
+    background-color: #0b0b0b; /* Fondo más oscuro */
     color: #ffffff; /* Texto blanco */
     animation: colorCycle 10s infinite alternate; /* Animación de cambio de color */
+display: flex;
+justify-content: center;
+
 }
 
 /* Definición de la animación para el fondo del body */
 @keyframes colorCycle {
-    0% { background-color: #121212; }    /* Negro */
-    20% { background-color: #ff4d4d; }   /* Rojo */
-    40% { background-color: #4d4dff; }   /* Azul */
-    60% { background-color: #4dff4d; }   /* Verde */
-    80% { background-color: #ff4dff; }   /* Rosa */
-    100% { background-color: #ffdb4d; }  /* Amarillo */
+    0% { background-color: #0b0b0b; }    /* Negro muy oscuro */
+    20% { background-color: #6a0dad; }   /* Violeta oscuro */
+    40% { background-color: #1a1aff; }   /* Azul más oscuro */
+    60% { background-color: #0047ab; }   /* Azul marino */
+    80% { background-color: #4b0082; }   /* Indigo oscuro */
+    100% { background-color: #00ffff; }  /* Cyan */
 }
 
 /* Estilo de la cuadrícula para las mesas */
 .contenedor-mesas {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    height: 100vh;
-    gap: 10px;
+    display: flex;
+ justify-content: space-around;
+align-items: center;
+width: 100%;
+flex-wrap: wrap;
+gap: 6rem;
+
     box-sizing: border-box;
+
 }
 
 /* Estilo de cada mesa */
 .mesa {
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-    border: 2px solid #333333;
-    color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid #333333; /* Más oscuro */
+    color: #ffffff; /* Texto blanco */
     text-align: center;
-    border-radius: 10px;
+    border-radius: 8px; /* Reducido */
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 10px; /* Añadido padding para un mejor aspecto */
+    background-color: rgba(50, 50, 50, 0.8); /* Color de mesa oscuro */
 }
 
 #image-container {
@@ -49,42 +56,42 @@ body {
     justify-content: center;     /* Centra la imagen horizontalmente */
     align-items: center;         /* Centra la imagen verticalmente */
     width: 100%;                 /* Ocupa todo el ancho del contenedor padre */
-    height: 250px;               /* Ajusta la altura según tus necesidades */
+    height: 200px;               /* Ajusta la altura según tus necesidades */
     overflow: hidden;            /* Oculta cualquier parte de la imagen que se salga del contenedor */
     position: relative;          /* Posicionamiento relativo para el contenido interno */
-    background-color: #f0f0f0;  /* Fondo opcional para visualizar mejor el área */
-    border-radius: 10px;
+    background-color: rgb(50, 50, 50);  /* Fondo oscuro opcional para visualizar mejor el área */
+    border-radius: 8px; /* Reducido */
 }
 
 #current-image {
-    
     width: 100%;                 /* La imagen ocupará todo el ancho del contenedor */
-    height: 250px;                /* La imagen ocupará todo el alto del contenedor */
+    height: 200px;               /* La imagen ocupará todo el alto del contenedor */
     object-fit: cover;           /* Mantiene la proporción de la imagen y la cubre completamente */
     transition: opacity 0.5s ease-in-out; /* Transición suave al cambiar */
 }
 
-
 /* Estilo de la mesa destacada */
 .mesa-destacada {
-    background-color: #f39c12;
-    color: #000000;
-    border: 2px solid #e67e22;
+    background-color: rgba(255, 3, 184, 0.9); /* Violeta oscuro */
+    color: white; /* Texto negro */
+    background: linear-gradient(rgb(255, 94, 121),  rgba(255, 0, 149, 0.9));
+    border: 1px solid rgba(255, 3, 184, 0.9); /* Más oscuro */
 }
 
 /* Estilo del título de la mesa */
-h1 {
+h2 {
     margin: 0;
-    padding: 5px 0;
-    font-size: 1.5em;
+    padding: 3px 0; /* Reducido */
+   color: white;
+    font-size: 20px;
 }
 
 /* Estilo del total */
 .total {
-    font-size: 2em;
+    font-size: 1.5em; /* Reducido */
     font-weight: bold;
-    margin: 5px 0;
-    color: #ffffff;
+    margin: 3px 0; /* Reducido */
+    color: #ffffff; /* Texto blanco */
 }
 
 .buttons-content {
@@ -96,8 +103,8 @@ h1 {
 
 /* Botones */
 .boton-agregar, .boton-limpiar {
-    font-size: 0.9em;
-    padding: 8px 12px;
+    font-size: 0.8em; /* Reducido */
+    padding: 6px 10px; /* Reducido */
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -108,33 +115,33 @@ h1 {
 
 /* Estilo de botón agregar */
 .boton-agregar {
-    background-color: #4a90e2;
-    color: #ffffff;
+    background-color: #6a0dad; /* Violeta oscuro */
+    color: #ffffff; /* Texto blanco */
     border: none;
 }
 
 .boton-agregar:hover {
-    background-color: #357ab8;
+    background-color: #550a8a; /* Color más oscuro al pasar el mouse */
 }
 
 /* Estilo de botón limpiar */
 .boton-limpiar {
-    background-color: #555555;
-    color: #ffffff;
+    background-color: #444444; /* Color oscuro */
+    color: #ffffff; /* Texto blanco */
     border: none;
-    margin-top: 10px;
+    margin-top: 8px; /* Reducido */
 }
 
 .boton-limpiar:hover {
-    background-color: #444444;
+    background-color: #333333; /* Color más oscuro al pasar el mouse */
 }
 
 /* Estilo del select */
 select {
-    background-color: #1f1f1f;
-    color: #ffffff;
+    background-color: #222222; /* Más oscuro */
+    color: #ffffff; /* Texto blanco */
     border-radius: 5px;
     border: 1px solid #444;
-    margin-bottom: 10px;
-    font-size: 16px;
+    margin-bottom: 8px; /* Reducido */
+    font-size: 14px; /* Reducido */
 }
